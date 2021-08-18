@@ -10,6 +10,8 @@
 // Layout
 // =====================================================
 
+@use 'layout/main';
+
 // =====================================================
 // Object
 // =====================================================
@@ -18,6 +20,8 @@
 // Component
 // -----------------------------------------
 
+@use 'object/component/btn';
+@use 'object/component/icon';
 @use 'object/component/error';
 
 // -----------------------------------------
@@ -25,7 +29,7 @@
 // -----------------------------------------
 
 @use 'object/project/header';
-@use 'object/project/main';
+@use 'object/project/addTodo';
 @use 'object/project/searchBox';
 @use 'object/project/todoList';
 

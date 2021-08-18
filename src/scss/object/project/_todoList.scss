@@ -1,7 +1,10 @@
+@use './object/utility/import' as i;
+
 .p-todoList {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
 
   .p-listItem {
     overflow: hidden;
@@ -14,5 +17,41 @@
       transform: scale(1.02);
       transition: 0.5s transform;
     }
+
+    &__iconTick {
+      margin-right: 0.4rem;
+      position: relative;
+      top: 3px;
+    }
+
+    &__iconBin {
+      float: right;
+      top: 3px;
+      position: relative;
+      color: #ff4d4d;
+    }
+
+    &__editText {
+      display: none;
+      // width: 80%;
+      height: 100%;
+      border: none;
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+  }
+  .p-listItem--done {
+    background: i.$bgColor-sub;
+    color: #888;
+  }
+
+  &__editText--done {
+    display: none;
+    // width: 80%;
+    height: 100%;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    background: i.$bgColor-sub;
   }
 }
