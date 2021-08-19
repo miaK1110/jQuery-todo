@@ -5,12 +5,12 @@
   padding: 0;
   margin: 0;
   width: 100%;
-
+  font-size: 0;
   .p-listItem {
     overflow: hidden;
     padding: 15px 15px;
-    background: #fff;
-    border-bottom: 1px solid #e8e8e8;
+    background: i.$bgColor-white;
+    border-bottom: 1px solid i.$borderColor;
     transition: 0.5s transform;
 
     &:hover {
@@ -19,27 +19,32 @@
     }
 
     &__iconTick {
-      margin-right: 0.4rem;
-      position: relative;
-      top: 3px;
+      color: i.$icon-check;
     }
 
     &__iconBin {
       float: right;
-      top: 3px;
-      position: relative;
-      color: #ff4d4d;
+      color: i.$icon-bin;
+    }
+
+    &__text {
+      width: 80%;
+      height: 100%;
+      border: none;
+      padding: 5px 10px;
+      font-size: 1rem;
     }
 
     &__editText {
       display: none;
-      // width: 80%;
+      width: 80%;
       height: 100%;
       border: none;
       padding: 5px 10px;
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
+
   .p-listItem--done {
     background: i.$bgColor-sub;
     color: #888;
@@ -47,11 +52,14 @@
 
   &__editText--done {
     display: none;
-    // width: 80%;
     height: 100%;
     border: none;
     padding: 5px 10px;
-    font-size: 16px;
+    font-size: 1rem;
     background: i.$bgColor-sub;
+
+    input {
+      background: i.$bgColor-sub;
+    }
   }
 }

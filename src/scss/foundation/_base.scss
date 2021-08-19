@@ -2,9 +2,9 @@
 
 body {
   background: i.$bgColor;
-  color: #333;
+  color: i.$fontColor;
   font-family: 'Roboto', sans-serif;
-  width: 100vw;
-  height: 100vh;
+  font-weight: 500;
+  width: 100%;
   box-sizing: border-box;
 }
